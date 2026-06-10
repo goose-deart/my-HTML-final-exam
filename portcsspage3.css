@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'caronline';
+    src: url("port\ resource/Beautiful-Caroline.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #121212;
+    color:#ffffff;
+    min-height: 100vh;
+    max-width: auto;
+    padding: 0 8%;
+    overflow: hidden;
+}
+/* CẤU TRÚC THANH MENU */
+#menu {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    border-bottom: 1.5px solid #ffffff;
+}
+
+/* Menu chữ ở giữa */
+#menu ul:nth-of-type(1) {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap:clamp(30px,7.813vw,130px); /*-- thuộc tính clamp --*/
+
+}
+/* settup menu c1 */
+#menu ul:nth-of-type(1) a {
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+/* ấn vào */
+#menu ul:nth-of-type(1) a:hover {
+    color: #e63946;
+}
+/* HIỆU ỨNG XOAY */
+/* bao quát vùng xoay */
+.duan{
+    width:100%;
+    padding-top: 8vw;
+    padding-bottom: 0;
+}
+/* chỉnh sửa hộp chứa ảnh */
+.imgbox{
+    width: 400px;
+    height: 500px;
+    border-radius: 20%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+/* hiện thỉ vùng chứa link để ấn vào */
+.imgbox a{
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+}   
+/* chỉnh sửa ảnh */
+.imgbox img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* trang ẩn*/
+.swiper-slide {
+    opacity: 1;
+    filter: grayscale(20);
+    transition: all 0.4s ease;   
+}
+/* trang chọn*/
+.swiper-slide-active {
+    opacity: 1;
+    filter: grayscale(0);     
+}
+/* 2 nút chuyển */
+.swiper-button-prev{
+    color: #ffffff;
+}
+.swiper-button-next{
+    color: #ffffff;
+}

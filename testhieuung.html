@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper JS Clickable Images</title>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    /* Basic slider dimensions */
+    .swiper {
+      width: 600px;
+      height: 400px;
+      max-width: 100%;
+    }
+
+    /* Reset anchor tags so they don't break slide layout */
+    .swiper-slide a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Ensure images fill the slide nicely */
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Swiper Main Container -->
+  <div class="swiper mySwiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1: Image wrapped in an anchor link -->
+      <div class="swiper-slide">
+        <a href="portfolio page 3.2-des.html" target="_blank">
+          <img src="c:\Users\Admin\Pictures\Saved Pictures\download (8).jfif"  alt="Link to Page 1">
+        </a>
+      </div>
+      
+      <!-- Slide 2: Converting the slide container into an anchor link (Alternative Approach) -->
+      <a href="https://example.com" target="_blank" class="swiper-slide">
+        <img src="https://picsum.photos" alt="Link to Page 2">
+      </a>
+      
+      <!-- Slide 3: Another image wrapped in an anchor link -->
+      <div class="swiper-slide">
+        <a href="https://example.com" target="_blank">
+          <img src="https://picsum.photos" alt="Link to Page 3">
+        </a>
+      </div>
+
+    </div>
+    
+    <!-- Optional: Pagination Dots -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- Optional: Navigation Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- Swiper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true, // Seamless loop
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false, // Prevents autoplay from stopping on swipe
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

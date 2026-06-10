@@ -1,0 +1,92 @@
+    @font-face {
+        font-family: 'caronline';
+        src: url("port\ resource/Beautiful-Caroline.otf") format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    body{
+        background-image: linear-gradient( to bottom, #FAECEC, #FFFFFF); 
+        color:#C1121F;
+        min-height: 100vh;
+        width:auto;
+        padding: 0 8%;
+        overflow: hidden;
+    }
+
+    /* CẤU TRÚC THANH MENU */
+    #menu {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        border-bottom: 1.5px solid #C1121F;
+    }
+
+    /* Menu chữ ở giữa */
+    #menu ul:nth-of-type(1) {
+        padding: 0;
+        display: flex;
+        list-style: none;
+        gap:clamp(30px,7.813vw,130px); /*-- thuộc tính clamp --*/
+    }
+    #menu ul:nth-of-type(1) a {
+
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        text-decoration: none;
+        color:#C1121F;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+    #menu ul:nth-of-type(1) a:hover {
+        color: #121212;
+    }
+
+    /*TITLE portfolio*/
+    #body .title{
+        width: auto;
+        
+        padding: 0;
+    }
+    #body h1{
+        margin: 0;
+        font-family:'caronline',serif;
+        display: flex;
+        justify-content: center;
+        font-size: 10vw /*-- đơn vị vw view-width (dựa theo màn hình) --*/
+    }
+    /*ảnh động*/
+    .picture{
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    .picture img{
+        position: absolute;
+        object-fit: cover;
+        opacity: 0;
+        width: 100%;
+        height: 710px; /*--size ảnh dựa trên 1440*900--*/
+    }
+    .picture img.active{
+        opacity: 1;
+    }
+
+    /* chữ cuối trang. update mới add ul vào trong "picture" để có thể tiết kiệm chỗ hiện chữ dưới tay của animation --*/
+
+    #body ul{
+        margin: 0;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+    
+    }
+    #body ul li{
+        border-right:  1.5px solid #970000;
+        padding: 0 25px;
+        display: inline-block;
+    }
+    #body ul li:last-child{
+        border-right: none;
+    }
