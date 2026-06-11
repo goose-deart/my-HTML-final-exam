@@ -5,7 +5,7 @@
     font-style: normal;
 }
 body{
-    background-color: #0B090A;
+    background-image:linear-gradient(to bottom, #3c0000,#1f1e1f);
     color:#ffffff;
     min-height: 100vh;
     overflow: hidden;   
@@ -21,11 +21,14 @@ body{
 }
 button{
    padding: 5px 10px;
+   width: 8vw;
+   height: 3vh;
+   font-size: 100%;
    font-family: 'caronline',serif;
    color: rgb(196, 36, 36);
    border-radius: 2mm;
-   
-}   
+}
+
 h2{
     display: flex;
     justify-content: center;
