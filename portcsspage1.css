@@ -58,14 +58,14 @@
     .picture{
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 300px;
     }
     .picture img{
         position: absolute;
         object-fit: cover;
         opacity: 0;
         width: 100%;
-        height: 710px; /*--size ảnh dựa trên 1440*900--*/
+        height: 410px; /*--size ảnh dựa trên 1440*900. Nếu cho 1204 -> 410px--*/
     }
     .picture img.active{
         opacity: 1;

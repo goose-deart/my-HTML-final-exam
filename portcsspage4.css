@@ -60,7 +60,7 @@
         padding-bottom: 30px;
         justify-content: center;
         letter-spacing: 3px;
-        font-size: 90px; /*-- thuộc tính clamp --*/
+        font-size: 50px; /*-- size 768-527 --*/
         margin-top: auto;
         margin-bottom: 0;
     }
@@ -70,8 +70,8 @@
         display: flex;
     }
     .infor .QR img{
-        width: 18vw;
-        height: 18vw;
+        width: 16vw;
+        height: 16vw;
         object-fit: cover;     
         
     }
